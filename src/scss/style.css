@@ -1,0 +1,236 @@
+body {
+  background-color: #aedacb;
+}
+body .navbar {
+  border: 4px solid black;
+  border-radius: 10px 10px 30px 30px;
+  padding: 8px 36px;
+}
+body .navbar .nav-link,
+body .navbar .dropdown-item {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+body .navbar .dropdown .dropdown-menu {
+  padding: 32px 0 27px;
+  border: 4px solid black;
+  border-radius: 0 0 13px 13px;
+  background-color: #fff;
+}
+body .navbar .dropdown .dropdown-menu .dropdown-item {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 0 40px;
+  margin-bottom: 3px;
+  transition: 0.5s;
+  position: relative;
+}
+body .navbar .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+  color: #e03f8d;
+}
+body .navbar .dropdown .dropdown-menu .dropdown-item::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 4px;
+  background-color: #000;
+  margin-top: -3px;
+}
+body .navbar .icons li {
+  cursor: pointer;
+}
+body .navbar .icons li span {
+  font-size: 10px;
+}
+body .card-top-info {
+  background-color: #fff;
+  height: 60px;
+  border-radius: 30px;
+  border: 4px solid black;
+  margin-bottom: 4px;
+}
+body .card-top-info .mask-img {
+  position: relative;
+}
+body .card-top-info .mask-img img {
+  filter: invert(87%) sepia(73%) saturate(1664%) hue-rotate(336deg) brightness(98%) contrast(102%);
+  height: 32px;
+}
+body .card-top-info .mask-img span {
+  position: absolute;
+  left: 25px;
+  top: 2px;
+  font-size: 16px;
+  font-weight: 900;
+}
+body .card-top-info .divider {
+  position: relative;
+  width: 100%;
+  margin: 0 20px;
+}
+body .card-top-info .divider span {
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  top: 50%;
+  margin-top: -3px;
+  display: block;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  left: 50%;
+  margin-left: -16px;
+}
+body .card-top-info .divider span::after {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  width: 4px;
+  height: 15px;
+  margin-top: -6px 0 0 -2px;
+  background-color: #000;
+}
+body .card-top-info .divider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+}
+body .card-top-info .category a {
+  display: block;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 52px;
+  color: #000;
+  border-radius: 26px;
+  background-color: #f5e7cc;
+  padding: 0 40px;
+  transition: 0.5s;
+}
+body .card-top-info .category a:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+          mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+          mask-size: 200%;
+}
+body .card {
+  border-radius: 30px;
+  border: 4px solid black;
+  position: relative;
+  background-color: #000;
+}
+body .card .cards-joinner {
+  position: absolute;
+  top: -19px;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  background-image: url("https://frenify.com/work/envato/frenify/wp/salla/1/wp-content/themes/salla/framework/svg/stitches2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+body .card .card-bg {
+  background-color: #fff;
+  border-radius: 26px;
+}
+body .card .card-bg .card-img-top {
+  border-radius: 10px;
+  border: 4px solid black;
+  margin-bottom: 20px;
+}
+body .card .card-bg .card-body .card-title a {
+  font-weight: 900;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 7px;
+  transition: 0.3s;
+}
+body .card .card-bg .card-body .card-title a:hover {
+  color: #e03f8d;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+          mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+          mask-size: 200%;
+}
+body .card .card-bg .card-body .card-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+}
+body .card .card-footer {
+  background-color: #000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  height: 72px;
+  padding: 0 16px;
+  overflow: hidden;
+}
+body .card .card-footer .read-line {
+  width: 20%;
+  background-color: #f7f4b1;
+  height: 4px;
+  display: block;
+  border-radius: 4px;
+}
+body .card .card-footer .foot-data a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-right: 15px;
+}
+body .card .card-footer .foot-data span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 13px;
+  background-color: #222;
+  padding: 0 10px;
+}
+body .card-item:first-child .card .card-bg {
+  background-color: #f7f4b1;
+}
+body .details-card .card-top-info {
+  border: 0;
+}
+body .details-card .card-top-info .mask-img img {
+  height: 40px;
+}
+body .details-card .card-top-info .mask-img span {
+  top: 5px;
+}
+body .details-card .card-top-info .divider {
+  width: 30%;
+  margin-top: 6px;
+}
+body .details-card .card .card-title {
+  font-weight: 900;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 7px;
+}
+body .details-card .card .card-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
+}/*# sourceMappingURL=style.css.map */

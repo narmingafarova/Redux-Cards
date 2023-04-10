@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import cardStore from "./store/cardStore.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import "./scss/style.scss";
 import { addCard } from "./action/cardAction";
 import { Provider } from "react-redux";

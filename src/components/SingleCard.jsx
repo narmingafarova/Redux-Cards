@@ -5,18 +5,23 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router-dom'
 
 const SingleCard = ({ id, date, category, photo, title, desc, view }) => {
+    const dateStatic = new Date();
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
     return (
         <Col sm={12} md={4} className='card-item'>
             <div className="card-top-info d-flex justify-content-between align-items-center ps-3">
                 <div className="mask-img">
                     <img src="https://frenify.com/work/envato/frenify/wp/salla/1/wp-content/themes/salla/framework/svg/brush.svg" alt="webkit" width={100} />
-                    <span>{date}</span>
+                    <span>{date ?? monthNames[dateStatic.getMonth()].substring(0,3).concat(" " + dateStatic.getDay())}</span>
                 </div>
                 <div className="divider">
                     <span></span>
                 </div>
                 <div className="category">
-                    <a href="/" className='text-decoration-none text-uppercase'>{category}</a>
+                    <a href="/" className='text-decoration-none text-uppercase'>{category ?? "General"}</a>
                 </div>
             </div>
             <Card>
@@ -38,7 +43,7 @@ const SingleCard = ({ id, date, category, photo, title, desc, view }) => {
                         <LinkContainer to={`/card/${id}`}>
                             <Button variant="none" className='text-white'>Read More</Button>
                         </LinkContainer>
-                        <span className='d-flex justify-content-between align-items-center'><EyeFill className='me-1'/> {view}</span>
+                        <span className='d-flex justify-content-between align-items-center'><EyeFill className='me-1' /> {view ?? 0}</span>
                     </div>
                     <span className='read-line'></span>
                 </div>
