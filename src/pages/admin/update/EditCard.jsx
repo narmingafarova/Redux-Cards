@@ -1,7 +1,7 @@
 import React from "react";
 import CardForm from "../CardForm";
 import { connect, useDispatch } from "react-redux";
-import { editCard } from "../../../action/cardAction";
+import { editCardFromDatabase } from "../../../action/cardAction";
 import { useNavigate } from "react-router-dom";
 
 const EditCard = ({ pvalue }) => {
@@ -14,7 +14,7 @@ const EditCard = ({ pvalue }) => {
       <CardForm
         editcard={pvalue}
         onFormSubmit={(item) => {
-          dispatch(editCard(pvalue.id, item));
+          dispatch(editCardFromDatabase(pvalue.id, item));
           navigate("/dashboard");
         }}
       />

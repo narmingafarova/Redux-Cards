@@ -19,6 +19,8 @@ const cardReducer = (state = cardState, action) => {
       return state.filter(({ id }) => {
         return id !== action.id;
       });
+    case "SET_CARDS":
+      return action.cards;
     default:
       return state;
   }

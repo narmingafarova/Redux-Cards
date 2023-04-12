@@ -6,16 +6,13 @@ import { Link } from 'react-router-dom'
 
 const SingleCard = ({ id, date, category, photo, title, desc, view }) => {
     const dateStatic = new Date();
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-    ];
 
     return (
         <Col sm={12} md={4} className='card-item'>
             <div className="card-top-info d-flex justify-content-between align-items-center ps-3">
                 <div className="mask-img">
                     <img src="https://frenify.com/work/envato/frenify/wp/salla/1/wp-content/themes/salla/framework/svg/brush.svg" alt="webkit" width={100} />
-                    <span>{date ?? monthNames[dateStatic.getMonth()].substring(0,3).concat(" " + dateStatic.getDay())}</span>
+                    <span>{date ?? dateStatic.toLocaleDateString('en-us', { month: "short", day: "numeric" })}</span>
                 </div>
                 <div className="divider">
                     <span></span>
